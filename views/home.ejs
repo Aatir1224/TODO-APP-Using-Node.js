@@ -1,7 +1,6 @@
 <html>
     <head>
         <title><%=title %></title>
-        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
         <link rel="stylesheet" href="/css/home.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -43,7 +42,6 @@
       <div class="border"></div>
       
       <%for ( let i of task_TODO){%>
-        <!-- <ul> -->
           <div class="border"></div>
           <div id="task-div">
           <h5 id="list-items">
@@ -58,7 +56,6 @@
             <a href="/delete-task/?id=<%= i._id%>" style="font-size: 1rem;"><i class="fas fa-trash-alt"></i>&nbsp;<b>Delete</b></a>
             <div id="category-item" style="font-size: 1rem; border-radius: 25px;"><b><%= i.category%></b></div>
           </div>
-        <!-- </ul> -->
         <%}%>
       </form>
     <script src="/js/date.js"></script>
